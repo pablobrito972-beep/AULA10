@@ -1,11 +1,11 @@
 PRECO_INTEIRA = 40
-PRECO_MEIA = 20
+PRECO_MEIA = PRECO_INTEIRA // 2
 PRECO_ISENTO = 0
 
 def definir_preco_ingresso(idade):
     if idade < 4:
-        return PRECO_ISENTO
-      
+        return 0
     elif idade <= 18 or idade >= 60:
-        return PRECO_MEIA
-    return PRECO_INTEIRA
+        return 20
+    return 40
+    
